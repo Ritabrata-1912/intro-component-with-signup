@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(0, 100%, 74%);
+    background-image: url("./bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    width: 100vw;
+    height: 100vh;
+    /* border:100px solid black; */
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 30%;
+    color: white;
+    /* border: 1px solid black; */
+}
+.left .left-up
+{
+    font-size: 35px;
+    /* color: white; */
+    font-weight: 700;
+}
+.left .left-down
+{
+    font-weight: 500;
+    font-size: 12px;
+}
+.right
+{
+    /* height: 500px; */
+    /* line-height: 0; */
+    /* border: 1px solid black; */
+    height: 400px;
+    width:400px;
+}
+.right-down
+{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+form
+{
+    /* padding-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 5px 20px;
+}
+.trial
+{
+    display: flex;
+    background-color: hsl(248, 32%, 49%);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 6px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.trial .try{
+  font-weight: 600;
+}
+.trial .month
+{
+    padding-left: 5px;
+    font-weight: 400;
+}
+input{
+    margin: 5px;
+    padding: 10px 0px 10px 10px;
+    border:2px solid hsl(246, 25%, 90%);
+    border-radius: 0.3rem;
+    font-size: 12px;
+    font-weight: 600;
+}
+input:focus{
+    outline: none;
+    border: 2px solid hsl(246,25%,60%);
+}
+.claim
+{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    background-color:hsl(154, 59%, 51%);
+    margin:0 20px 5px 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.small
+{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    padding-bottom: 40px;
+}
+.click
+{
+    color:hsl(246, 25%, 77%)
+}
+.terms
+{
+    color:red;
+    padding-left: 5px;
+}
+@media screen and (max-width:425px)
+{
+    body{
+        background-image: url("./bg-intro-mobile.png");
+    }
+    .left
+    {
+        width: 70%;
+        padding:10px;
+        margin-bottom: 40px;
+    }
+    .right{
+        width:90%;
+    }
+    .left .left-up{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .left-down
+    {
+        text-align: center;
+        font-size: 15px;
+    }
+    .trial{
+        padding:20px 20px 20px 20px;
+    }
+    section{
+        flex-direction: column;
+    }
+}
